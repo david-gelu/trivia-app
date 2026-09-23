@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="light"] {
+  --primary-color: #ffffff;
+  --second-color: #fafafa;
+  --text-color: #3c455c;
+  --link-color: #3c455c;
+  --nav-color: var(--text-color);
+  --nav-bg: #e8e2d4;
+  --nav-bg-color: #e8e2d4;
+  --bg-color-transparent: rgba(232, 226, 212, 0.9);
+  --key-color: #242424;
+  --property-color: #064664;
+  --theme-name-color: var(--text-color);
+  --button-color: var(--text-color);
+  --bg-color-accent: #ebe6da;
+  --bg-color: #e8e2d4;
+  --link-color-accent: rgb(55.9736842105, 64.3697368421, 85.8263157895);
+  --text-with-transparency: rgba(36, 36, 36, 0.3);
+
+  --background: var(--bg-color);
+  --foreground: var(--text-color);
+  --card: var(--primary-color);
+  --card-foreground: var(--text-color);
+  --primary: var(--link-color);
+  --primary-foreground: var(--primary-color);
+  --secondary: var(--second-color);
+  --secondary-foreground: var(--text-color);
+  --muted: var(--bg-color-accent);
+  --muted-foreground: var(--text-color);
+  --accent: var(--bg-color-accent);
+  --accent-foreground: var(--text-color);
+  --border: rgba(60, 69, 92, 0.2);
+  --input: var(--second-color);
+  --ring: var(--link-color);
+  --radius: 0.75rem;
+}
+
+[data-theme="dark"] {
+  --primary-color: #222;
+  --second-color: #2a2a2a;
+  --text-color: #dcebf1;
+  --link-color: #2dd3b5;
+  --nav-bg: #001e2b;
+  --nav-color: #87aec0;
+  --nav-bg-color: #001e2b;
+  --bg-color-transparent: rgba(0, 30, 43, 0.9);
+  --key-color: #87aec0;
+  --theme-name-color: var(--text-color);
+  --property-color: #cce6f1;
+  --bg-color: #001e2b;
+  --bg-color-accent: #082b3a;
+  --link-color-accent: rgb(25, 91, 79);
+  --button-color: var(--text-color);
+  --text-with-transparency: rgba(220, 235, 241, 0.3);
+
+  --background: var(--bg-color);
+  --foreground: var(--text-color);
+  --card: var(--primary-color);
+  --card-foreground: var(--text-color);
+  --primary: var(--link-color);
+  --primary-foreground: var(--primary-color);
+  --secondary: var(--second-color);
+  --secondary-foreground: var(--text-color);
+  --muted: var(--bg-color-accent);
+  --muted-foreground: var(--text-color);
+  --accent: var(--bg-color-accent);
+  --accent-foreground: var(--text-color);
+  --border: rgba(220, 235, 241, 0.18);
+  --input: var(--second-color);
+  --ring: var(--link-color);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius: var(--radius);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  font-family: Inter, "Segoe UI", sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  background-color: var(--bg-color);
+}
+
+body {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+button {
+  cursor: pointer;
+}
